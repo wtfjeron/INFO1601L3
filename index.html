@@ -1,17 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lab 3 - Complete</title>
+    <style>
+        /* TASK 2: Box Model */
+        .box-model-demo {
+            background-color: lightgrey;
+            width: 300px;
+            border-bottom: solid;
+            padding: 50px;
+            margin: 20px 10px 40px 20px;
+        }
+        
+        /* TASK 3: Display and Hover */
+        li:hover {
+            display: none;
+        }
+        
+        /* TASK 4 & 5: Poem Styling */
+        .bold {
+            font-weight: bold;
+        }
+        
+        h2 {
+            text-align: center;
+            text-decoration: underline overline solid black;
+        }
+        
+        p {
+            text-align: justify;
+            width: 50vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* TASK 6-10: Main Styles */
+        section {
+            border-bottom: 5px solid black;
+            height: 40vh;
+            overflow-y: scroll;
+        }
+        
+        #section1::before {
+            background-image: url("https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+            background-size: cover;
+            background-position: center;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 40vh;
+            z-index: -2;
+            opacity: 0.3;
+        }
+        
+        #section2 {
+            padding: 2em;
+            color: white;
+            background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,211,253,1) 50%, rgba(252,176,69,1) 100%);
+        }
+        
+        /* TASK 8: Outline on Hover */
+        p:hover {
+            outline: 2px double red;
+        }
+        
+        /* TASK 10: Card with Shadow */
+        .card {
+            width: 400px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: white;
+            color: black;
+            text-align: center;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            border-radius: 4px;
+            padding: 5px;
+        }
+        
+        .card h2 {
+            text-decoration: none;
+            color: black;
+        }
+        
+        /* TASK 3 List Styling */
+        .task3-list {
+            margin: 20px auto;
+            width: 50vw;
+        }
+    </style>
 </head>
-<style>
-
-</style>
 <body>
-
-
-
-	
+    <!-- TASK 2: Box Model Demo -->
+    <h1>Task 2: Box Model</h1>
+    <div class="box-model-demo">
+        This is the div content (Task 2)
+    </div>
+    
+    <hr>
+    
+    <!-- TASK 3: Hover to Hide List -->
+    <h1>Task 3: Hover to Hide</h1>
+    <div class="task3-list">
+        <ol>
+            <li>Item 1 - Hover to hide</li>
+            <li>Item 2 - Hover to hide</li>
+            <li>Item 3 - Hover to hide</li>
+            <li>Item 4 - Hover to hide</li>
+        </ol>
+    </div>
+    
+    <hr>
+    
+    <!-- TASKS 4-10: Poem and Styled Sections -->
+    <h1>Tasks 4-10: Poem with Full Styling</h1>
+    
+    <section id="section1">
+        <h1>Sample Poem</h1>
+        <h2>The Jabberwocky</h2>
+        
+        <p><span class="bold">'Twas</span> brillig, and the slithy toves<br>
+        Did gyre and gimble in the wabe:<br>
+        All mimsy were the borogoves,<br>
+        And the mome raths outgrabe.</p>
+        
+        <p><span class="bold">"Beware</span> the Jabberwock, my son!<br>
+        The jaws that bite, the claws that catch!<br>
+        Beware the Jubjub bird, and shun<br>
+        The frumious Bandersnatch!"</p>
+        
+        <p><span class="bold">He</span> took his vorpal sword in hand;<br>
+        Long time the manxome foe he sought—<br>
+        So rested he by the Tumtum tree<br>
+        And stood awhile in thought.</p>
+        
+        <p><span class="bold">And</span> in uffish thought he stood,<br>
+        The Jabberwock, with eyes of flame,<br>
+        Came whiffling through the tulgey wood,<br>
+        And burbled as it came!</p>
+    </section>
+    
+    <section id="section2">
+        <div class="card">
+            <h2>My Div</h2>
+            <p style="color: black; font-weight: normal;">This is a centered card with a box shadow!</p>
+        </div>
+    </section>
 </body>
 </html>
